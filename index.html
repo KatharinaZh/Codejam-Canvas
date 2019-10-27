@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Piskel</title>
+        <link rel="stylesheet" href="./normalize.css">
+        <link rel="stylesheet" href="./assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.11.2-web/fontawesome-free-5.11.2-web/css/all.min.css">
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
         <div class="wrapper">
@@ -27,7 +31,22 @@
         <main class="main">
 
             <section class="panel_section--left">
+                <div class="settings_panel">
+                    <div class="settings_panel--item"><i class="fas fa-fill-drip"></i><p>Paint bucket</p></div>
+                    <div class="settings_panel--item"><i class="fas fa-eye-dropper"></i><p>Choose color</p></div>
+                    <hr>
+                    <div class="settings_panel--item"><i class="fas fa-arrows-alt"></i><p>Move</p></div>
+                    <div class="settings_panel--item"><i class="fas fa-exchange-alt"></i><p>Transform</p></div>
+                </div>
 
+
+                <div class="color_panel">
+                    <div class="color_panel--item"><div class="circle"></div><p>Current color</p></div>
+                    <div class="color_panel--item"><div class="circle"></div><p>Previous color</p></div>
+                    <hr>
+                    <div class="color_panel--item"><div class="circle red"></div><p>Red</p></div>
+                    <div class="color_panel--item"><div class="circle blue"></div><p>Blue</p></div>
+                </div>
             </section>
 
 
@@ -37,7 +56,11 @@
 
 
             <section class="panel_section--right">
-
+                <div class="size_panel">
+                    <div class="size_panel--item" id="first"><i class="far fa-square"></i><p>4x4</p></div>
+                    <div class="size_panel--item" id="second"><i class="far fa-square"></i><p>32x32</p></div>
+                    <div class="size_panel--item" id="third"><i class="far fa-square"></i><p>256x256</p></div>
+                </div>
             </section>
         </main>
     </div> 
